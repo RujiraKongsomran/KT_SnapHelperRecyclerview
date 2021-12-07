@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Project Mobile/Kotlin/KT_SnapHelperRecyclerview/app/src/main/res/layout/activity_main.xml" value="0.4466666666666667" />
+        <entry key="..\:/Project Mobile/Kotlin/KT_SnapHelperRecyclerview/app/src/main/res/drawable/ic_cake.xml" value="0.1" />
+        <entry key="..\:/Project Mobile/Kotlin/KT_SnapHelperRecyclerview/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Project Mobile/Kotlin/KT_SnapHelperRecyclerview/app/src/main/res/layout/noun_item.xml" value="0.275" />
       </map>
     </option>
