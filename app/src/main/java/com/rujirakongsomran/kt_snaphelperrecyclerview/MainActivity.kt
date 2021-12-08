@@ -2,7 +2,11 @@ package com.rujirakongsomran.kt_snaphelperrecyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearSnapHelper
+import androidx.recyclerview.widget.SnapHelper
+import com.github.rubensousa.gravitysnaphelper.GravitySnapHelper
 import com.rujirakongsomran.kt_snaphelperrecyclerview.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -15,9 +19,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         val nounList = generateDummyList(500)
-        binding.recyclerview.adapter = NounAdapter(nounList)
+        val snapHelper = GravitySnapHelper(Gravity.TOP)
+        snapHelper.attachToRecyclerView(binding.recyclerview)
         binding.recyclerview.layoutManager = LinearLayoutManager(this)
+        binding.recyclerview.adapter = NounAdapter(nounList)
         binding.recyclerview.setHasFixedSize(true)
+
     }
 
     private fun generateDummyList(size: Int): List<NounItem> {
